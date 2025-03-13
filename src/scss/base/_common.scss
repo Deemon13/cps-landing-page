@@ -1,0 +1,25 @@
+html {
+	box-sizing: border-box;
+
+	font-family: 'TT Lakes Regular', sans-serif;
+	font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+
+	color: var(--main-dark-text-color);
+	background-color: var(--main-light-bg-color);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
