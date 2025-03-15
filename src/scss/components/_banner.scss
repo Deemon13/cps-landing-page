@@ -22,3 +22,14 @@
 		border-radius: 6px;
 	}
 }
+
+@media screen and (min-width: 1440px) {
+	.banner {
+		margin-left: 36px;
+	}
+
+	.banner__img {
+		width: 531px;
+		min-height: 307px;
+	}
+}

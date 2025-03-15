@@ -116,3 +116,28 @@
 		padding-right: 0;
 	}
 }
+
+@media screen and (min-width: 1440px) {
+	.section {
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+
+	.section__title--services {
+		margin-bottom: 8px;
+	}
+
+	.section__menu {
+		overflow: visible;
+		flex-wrap: wrap;
+		margin-bottom: 8px;
+	}
+
+	.section__descr {
+		margin-bottom: 14px;
+	}
+
+	.section--services {
+		padding-bottom: 51px;
+	}
+}

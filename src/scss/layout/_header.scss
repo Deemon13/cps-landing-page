@@ -46,6 +46,7 @@
 
 .header__icon-wrapper {
 	display: flex;
+	align-items: center;
 
 	transition: transform var(--animation-time) var(--animation-time-function);
 }
@@ -58,6 +59,14 @@
 .header__icon-wrapper:focus {
 	cursor: pointer;
 	transform: scale(1.1);
+}
+
+.header__action-text {
+	display: none;
+}
+
+.header__icons--desktop {
+	display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,5 +87,31 @@
 
 	.header__burger {
 		margin-right: 20px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.header {
+		display: none;
+	}
+
+	.header__icons--desktop {
+		position: absolute;
+		top: 42px;
+		right: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	.header__action-text {
+		display: inline;
+		margin-right: 8px;
+
+		font-family: 'TT Lakes Medium';
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+
+		color: var(--main-dark-text-color);
 	}
 }

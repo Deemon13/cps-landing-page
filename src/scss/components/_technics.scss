@@ -74,6 +74,7 @@
 		overflow: visible;
 		column-gap: 24px;
 		row-gap: 16px;
+		justify-content: center;
 	}
 
 	.technics__item:not(:last-child) {
@@ -84,7 +85,19 @@
 		width: 224px;
 	}
 
-	.technics__item--tablet-more {
+	.technics__item--tablet,
+	.technics__item--more {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.technics {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.technics__item--tablet {
+		display: block;
 	}
 }

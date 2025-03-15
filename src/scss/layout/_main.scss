@@ -5,11 +5,26 @@
 }
 
 .main__right {
+	position: relative;
 	background-color: var(--main-light-bg-color);
 }
 
 @media screen and (min-width: 768px) {
 	.main {
 		max-width: 1119px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.main {
+		max-width: 100%;
+		min-width: 1120px;
+		display: flex;
+		padding-right: 30px;
+		padding-left: 34px;
+	}
+
+	.main__right {
+		padding-top: 42px;
 	}
 }
