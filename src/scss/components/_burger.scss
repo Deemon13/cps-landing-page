@@ -1,0 +1,11 @@
+.burger {
+	display: flex;
+
+	transition: transform var(--animation-time) var(--animation-time-function);
+}
+
+.burger:hover,
+.burger:focus {
+	cursor: pointer;
+	transform: scale(1.1);
+}

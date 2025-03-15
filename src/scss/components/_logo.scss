@@ -1,0 +1,19 @@
+.logo {
+	margin-top: 0;
+	margin-bottom: 0;
+	display: flex;
+
+	fill: var(--logo-fill-color);
+	stroke: var(--logo-stroke-color);
+	stroke-width: 0.5px;
+
+	transition: fill var(--animation-time) var(--animation-time-function),
+		stroke var(--animation-time) var(--animation-time-function);
+}
+
+.logo:hover,
+.logo:focus {
+	cursor: pointer;
+	fill: var(--accent-color);
+	stroke: var(--accent-color);
+}

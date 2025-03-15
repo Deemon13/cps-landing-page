@@ -1,0 +1,33 @@
+.expand {
+	padding-left: 8px;
+}
+
+.expand__icon {
+	margin-right: 16px;
+	fill: var(--accent-pseudo-color);
+	transform: rotate(0);
+
+	transition: transform var(--animation-time) var(--animation-time-function);
+}
+
+.expand__icon--pressed {
+	transform: rotate(180deg);
+}
+
+.expand__link {
+	@extend %link;
+
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 16px;
+	line-height: 1.5; /*24px*/
+	letter-spacing: -0.2px;
+
+	color: var(--main-dark-text-color);
+
+	transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.expand__link:hover,
+.expand__link:focus {
+	color: var(--accent-color);
+}

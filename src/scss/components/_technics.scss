@@ -1,0 +1,66 @@
+.technics {
+	@extend %list;
+	padding-left: 16px;
+	display: flex;
+	overflow: auto;
+}
+
+.technics__item {
+	position: relative;
+	padding: 16px;
+	height: 160px;
+	width: 240px;
+	flex-shrink: 0;
+
+	border-radius: 6px;
+	border: 1px solid var(--item-border-line-color);
+
+	background-color: var(--secondary-light-bg-color);
+
+	transition: border-color var(--animation-time) var(--animation-time-function);
+}
+
+.technics__item:not(:last-child) {
+	margin-right: 16px;
+}
+
+.technics__item:hover {
+	cursor: pointer;
+	border-color: var(--accent-color);
+}
+
+.technics__link {
+	@extend %link;
+}
+
+.technics__item:hover .technics__icon,
+.technics__link:hover .technics__icon,
+.technics__link:focus .technics__icon {
+	transform: scale(1.1);
+}
+
+.technics__title {
+	margin: 0;
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 16px;
+	line-height: 1.5; /*24px*/
+	letter-spacing: -0.2px;
+
+	color: var(--main-dark-text-color);
+
+	transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.technics__item:hover .technics__title {
+	color: var(--accent-color);
+}
+
+.technics__icon {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	width: 40px;
+	height: 40px;
+
+	transition: transform var(--animation-time) var(--animation-time-function);
+}

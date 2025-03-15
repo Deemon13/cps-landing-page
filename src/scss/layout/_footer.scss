@@ -1,0 +1,27 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 16px;
+	padding-bottom: 19px;
+
+	text-align: center;
+}
+
+.footer__text {
+	margin-top: 0;
+	margin-bottom: 16px;
+
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0;
+
+	color: var(--main-light-text-color);
+}
+
+.footer__text--date,
+.footer__text--info {
+	margin-bottom: 0;
+}
