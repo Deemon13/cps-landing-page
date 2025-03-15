@@ -1,5 +1,10 @@
+.services {
+	display: none;
+}
+
 @media screen and (min-width: 768px) {
 	.services {
+		display: table;
 		width: 100%;
 		max-width: 720px;
 		margin: 0 auto;
