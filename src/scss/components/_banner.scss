@@ -8,3 +8,17 @@
 	width: 320px;
 	height: 176px;
 }
+
+@media screen and (min-width: 768px) {
+	.banner {
+		position: relative;
+		flex-shrink: 0;
+		margin-left: 48px;
+	}
+
+	.banner__img {
+		width: 360px;
+		min-height: 208px;
+		border-radius: 6px;
+	}
+}

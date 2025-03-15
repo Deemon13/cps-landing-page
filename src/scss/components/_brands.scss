@@ -52,3 +52,27 @@
 
 	transition: transform var(--animation-time) var(--animation-time-function);
 }
+
+@media screen and (min-width: 768px) {
+	.brands {
+		margin-bottom: 24px;
+		padding-left: 24px;
+		padding-right: 24px;
+		flex-wrap: wrap;
+		overflow: visible;
+		column-gap: 24px;
+		row-gap: 16px;
+	}
+
+	.brands__item:not(:last-child) {
+		margin-right: 0;
+	}
+
+	.brands__item {
+		width: 224px;
+	}
+
+	.brands__item--tablet-more {
+		display: none;
+	}
+}

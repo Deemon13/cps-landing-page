@@ -1,61 +1,71 @@
-.services {
-	@extend %list;
-	margin-bottom: 16px;
-	padding-left: 8px;
-	display: flex;
-	overflow: auto;
-}
+@media screen and (min-width: 768px) {
+	.services {
+		width: 100%;
+		max-width: 720px;
+		margin: 0 auto;
+		margin-bottom: 24px;
+		padding-left: 24px;
+		padding-right: 24px;
+		border-collapse: collapse;
+		overflow: hidden;
+	}
 
-.services__item {
-	position: relative;
-	padding: 16px;
-	height: 200px;
-	width: 260px;
-	flex-shrink: 0;
+	.services th {
+		padding-bottom: 16px;
 
-	border-radius: 6px;
-	border: 1px solid var(--item-border-line-color);
+		font-family: 'TT Lakes Medium', sans-serif;
+		text-align: left;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0;
 
-	background-color: var(--secondary-light-bg-color);
-}
+		color: var(--main-light-text-color);
+	}
 
-.services__item:not(:last-child) {
-	margin-right: 16px;
-}
+	.services th:first-child {
+		padding-left: 16px;
+	}
 
-.services__group {
-	margin-bottom: 16px;
-}
+	.services tbody {
+		background-color: var(--secondary-light-bg-color);
+	}
 
-.services__group--last {
-	margin-bottom: 0;
-}
+	.services tbody tr:first-child td:first-child {
+		border-top-left-radius: 6px;
+	}
+	.services tbody tr:first-child td:last-child {
+		border-top-right-radius: 6px;
+	}
 
-.services__title {
-	margin-top: 0;
-	margin-bottom: 4px;
+	.services tbody tr:last-child td:first-child {
+		border-bottom-left-radius: 6px;
+	}
 
-	font-family: 'TT Lakes Medium', sans-serif;
-	font-size: 14px;
-	line-height: 1.14; /*16px*/
-	letter-spacing: 0;
+	.services tbody tr:last-child td:last-child {
+		border-bottom-right-radius: 6px;
+	}
 
-	color: var(--main-light-text-color);
-}
+	.services tbody {
+		padding-left: 16px;
+	}
 
-.services__text {
-	margin: 0;
+	.services tbody td {
+		padding-top: 16px;
+		padding-bottom: 16px;
 
-	font-family: 'TT Lakes Regular', sans-serif;
-	font-size: 14px;
-	line-height: 1.29; /*18px*/
-	letter-spacing: 0.2px;
+		font-family: 'TT Lakes Regular', sans-serif;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.2px;
 
-	color: var(--main-dark-text-color);
-}
+		color: var(--main-dark-text-color);
+	}
 
-.services__btn {
-	position: absolute;
-	bottom: 16px;
-	right: 16px;
+	.services tbody tr:not(:last-child) {
+		border-bottom: 1px solid var(--item-border-line-color);
+	}
+
+	.services td:first-child {
+		padding-left: 16px;
+	}
 }

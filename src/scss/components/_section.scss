@@ -26,6 +26,7 @@
 }
 
 .section__title--repair {
+	margin-bottom: 16px;
 	padding: 16px;
 
 	font-family: 'TT Lakes Regular', sans-serif;
@@ -70,4 +71,48 @@
 	letter-spacing: 0.2px;
 
 	color: var(--main-dark-text-color);
+}
+
+@media screen and (min-width: 768px) {
+	.section {
+		padding-bottom: 32px;
+	}
+
+	.section__title--services {
+		margin-bottom: 32px;
+	}
+
+	.section__menu {
+		margin-bottom: 32px;
+	}
+
+	.section--services {
+		padding-bottom: 32px;
+	}
+
+	.section--prices {
+		padding-bottom: 47px;
+	}
+
+	.section__descr {
+		margin-bottom: 10px;
+	}
+
+	.section__title--repair {
+		margin-bottom: 24px;
+	}
+
+	.section__title--prices {
+		margin-bottom: 32px;
+	}
+
+	.section__expand {
+		margin-bottom: 0;
+	}
+
+	.section__nds {
+		max-width: 446px;
+		padding-left: 24px;
+		padding-right: 0;
+	}
 }

@@ -1,11 +1,15 @@
 .main {
-	max-width: 320px;
+	max-width: 767px;
 	width: 100%;
 	margin: 0 auto;
-	// padding-top: 24px;
-	// padding-bottom: 25px;
 }
 
 .main__right {
 	background-color: var(--main-light-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+	.main {
+		max-width: 1119px;
+	}
 }

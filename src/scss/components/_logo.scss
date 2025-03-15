@@ -2,6 +2,7 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	display: flex;
+	align-items: center;
 
 	fill: var(--logo-fill-color);
 	stroke: var(--logo-stroke-color);
@@ -16,4 +17,15 @@
 	cursor: pointer;
 	fill: var(--accent-color);
 	stroke: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+	.logo::before {
+		content: '';
+		display: block;
+		margin-right: 20px;
+		width: 2px;
+		height: 32px;
+		background-color: var(--item-border-line-color);
+	}
 }

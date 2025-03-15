@@ -24,15 +24,36 @@
 					</h1>
 				</div>
 				<div class="header__wrapper header__wrapper--right">
-					<div class="header__icon-wrapper">
-						<svg width="40" height="40">
-							<use href="./src/images/icons/sprite.svg#repair"></use>
-						</svg>
+					<div class="header__icons header__icons--tablet">
+						<div class="header__icon-wrapper">
+							<svg width="40" height="40">
+								<use href="./src/images/icons/sprite.svg#phone"></use>
+							</svg>
+						</div>
+						<div class="header__icon-wrapper">
+							<svg width="40" height="40">
+								<use href="./src/images/icons/sprite.svg#chat"></use>
+							</svg>
+						</div>
+						<div class="header__icon-wrapper">
+							<svg width="40" height="40">
+								<use href="./src/images/icons/sprite.svg#profile"></use>
+							</svg>
+						</div>
 					</div>
-					<div class="header__icon-wrapper">
-						<svg width="40" height="40">
-							<use href="./src/images/icons/sprite.svg#checkstatus"></use>
-						</svg>
+					<div class="header__icons">
+						<div class="header__icon-wrapper">
+							<svg width="40" height="40">
+								<use href="./src/images/icons/sprite.svg#repair"></use>
+							</svg>
+						</div>
+						<div class="header__icon-wrapper">
+							<svg width="40" height="40">
+								<use
+									href="./src/images/icons/sprite.svg#checkstatus"
+								></use>
+							</svg>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -40,7 +61,7 @@
 		<main class="main">
 			<nav>Menu</nav>
 			<div class="main__right">
-				<section class="section section--services">
+				<section class="section description section--services">
 					<div class="container">
 						<h2 class="title section__title section__title--services">
 							Услуги и сервисы
@@ -73,48 +94,53 @@
 								<a href="#" class="services-list__link">Отзывы</a>
 							</li>
 						</ul>
-						<p class="section__descr text-about">
-							Мы являемся авторизованным сервисным центром по ремонту
-							техники Dell. Только у нас вы можете отремонтировать свой
-							ноутбук Dell с официальной гарантией производителя.
-							<span class="text-about text-about__tablet"
-								>Мы успешно работаем с 1992 года и заслужили репутацию
-								надежного партнера</span
-							><span class="text-about text-about__desktop"
-								>, что подтверждает большое количество постоянных
-								клиентов. Мы гордимся тем, что к нам обращаются по
-								рекомендациям и, в свою очередь, советуют нас родным и
-								близким.</span
-							>
-						</p>
-						<div class="section__expand expand">
-							<svg class="expand__icon" width="7" height="10">
-								<use
-									href="./src/images/icons/sprite.svg#expand-down"
-								></use>
-							</svg>
-							<a class="expand__link" href="#">Читать далее</a>
-						</div>
+						<div class="description__container">
+							<div class="description__left">
+								<p class="section__descr text-about">
+									Мы являемся авторизованным сервисным центром по
+									ремонту техники Dell. Только у нас вы можете
+									отремонтировать свой ноутбук Dell с официальной
+									гарантией производителя.
+									<span class="text-about text-about__tablet"
+										>Мы успешно работаем с 1992 года и заслужили
+										репутацию надежного партнера</span
+									><span class="text-about text-about__desktop"
+										>, что подтверждает большое количество постоянных
+										клиентов. Мы гордимся тем, что к нам обращаются по
+										рекомендациям и, в свою очередь, советуют нас
+										родным и близким.</span
+									>
+								</p>
+								<div class="section__expand expand">
+									<svg class="expand__icon" width="7" height="10">
+										<use
+											href="./src/images/icons/sprite.svg#expand-down"
+										></use>
+									</svg>
+									<a class="expand__link" href="#">Читать далее</a>
+								</div>
+							</div>
 
-						<picture class="section__banner banner">
-							<source
-								srcset="./src/images/banner_mobile.jpg"
-								media="(max-width: 767px)"
-							/>
-							<source
-								srcset="./src/images/banner_tablet.jpg"
-								media="(min-width: 768px) and (max-width: 1119px)"
-							/>
-							<source
-								srcset="./src/images/banner_desktop.jpg"
-								media="(min-width: 1120px)"
-							/>
-							<img
-								class="banner__img"
-								src="./src/images/banner_mobile.jpg"
-								alt="Фото баннера"
-							/>
-						</picture>
+							<picture class="section__banner banner">
+								<source
+									srcset="./src/images/banner_mobile.jpg"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="./src/images/banner_tablet.jpg"
+									media="(min-width: 768px) and (max-width: 1119px)"
+								/>
+								<source
+									srcset="./src/images/banner_desktop.jpg"
+									media="(min-width: 1120px)"
+								/>
+								<img
+									class="banner__img"
+									src="./src/images/banner_mobile.jpg"
+									alt="Фото баннера"
+								/>
+							</picture>
+						</div>
 					</div>
 				</section>
 				<section class="section section--repair">
@@ -194,7 +220,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="brands__item">
+						<li class="brands__item brands__item--tablet-more">
 							<a class="brands__link" href="#">
 								<img
 									class="brands__logo"
@@ -206,7 +232,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="brands__item">
+						<li class="brands__item brands__item--tablet-more">
 							<a class="brands__link" href="#">
 								<img
 									class="brands__logo"
@@ -218,7 +244,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="brands__item">
+						<li class="brands__item brands__item--tablet-more">
 							<a class="brands__link" href="#">
 								<img
 									class="brands__logo"
@@ -231,6 +257,13 @@
 							</a>
 						</li>
 					</ul>
+
+					<div class="section__expand--more expand--more">
+						<svg class="expand__icon" width="7" height="10">
+							<use href="./src/images/icons/sprite.svg#expand-down"></use>
+						</svg>
+						<a class="expand__link" href="#">Показать все</a>
+					</div>
 				</section>
 				<section class="section section--repair">
 					<h3 class="title section__title section__title--repair">
@@ -261,7 +294,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="technics__item">
+						<li class="technics__item technics__item--tablet-more">
 							<a class="technics__link" href="#">
 								<h4 class="technics__title">Ремонт мониторов</h4>
 								<svg class="technics__icon" width="40" height="40">
@@ -269,7 +302,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="technics__item">
+						<li class="technics__item technics__item--tablet-more">
 							<a class="technics__link" href="#">
 								<h4 class="technics__title">Ремонт ноутбуков</h4>
 								<svg class="technics__icon" width="40" height="40">
@@ -277,7 +310,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="technics__item">
+						<li class="technics__item technics__item--tablet-more">
 							<a class="technics__link" href="#">
 								<h4 class="technics__title">Ремонт планшетов</h4>
 								<svg class="technics__icon" width="40" height="40">
@@ -285,7 +318,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="technics__item">
+						<li class="technics__item technics__item--tablet-more">
 							<a class="technics__link" href="#">
 								<h4 class="technics__title">Ремонт ПК</h4>
 								<svg class="technics__icon" width="40" height="40">
@@ -293,7 +326,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="technics__item">
+						<li class="technics__item technics__item--tablet-more">
 							<a class="technics__link" href="#">
 								<h4 class="technics__title">Ремонт мониторов</h4>
 								<svg class="technics__icon" width="40" height="40">
@@ -301,7 +334,7 @@
 								</svg>
 							</a>
 						</li>
-						<li class="technics__item">
+						<li class="technics__item technics__item--tablet-more">
 							<a class="technics__link" href="#">
 								<h4 class="technics__title">Ремонт ноутбуков</h4>
 								<svg class="technics__icon" width="40" height="40">
@@ -310,112 +343,130 @@
 							</a>
 						</li>
 					</ul>
+					<div class="section__expand--more expand--more">
+						<svg class="expand__icon" width="7" height="10">
+							<use href="./src/images/icons/sprite.svg#expand-down"></use>
+						</svg>
+						<a class="expand__link" href="#">Показать все</a>
+					</div>
 				</section>
-				<section class="section section--repair">
-					<h3 class="title section__title section__title--repair">
+				<section class="section section--repair section--prices">
+					<h3
+						class="title section__title section__title--repair section__title--prices"
+					>
 						Цены на услуги
 					</h3>
-					<ul class="services">
-						<li class="services__item">
-							<div class="services__group">
-								<h4 class="services__title">Ремонтные услуги</h4>
-								<p class="services__text">
+					<ul class="services-mobile">
+						<li class="services-mobile__item">
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Ремонтные услуги</h4>
+								<p class="services-mobile__text">
 									Тестирование с выдачей технического заключения
 								</p>
 							</div>
-							<div class="services__group">
-								<h4 class="services__title">Цена</h4>
-								<p class="services__text">1000 &#8381;</p>
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Цена</h4>
+								<p class="services-mobile__text">1000 &#8381;</p>
 							</div>
-							<div class="services__group services__group--last">
-								<h4 class="services__title">Срок</h4>
-								<p class="services__text">30-120 мин</p>
+							<div
+								class="services-mobile__group services-mobile__group--last"
+							>
+								<h4 class="services-mobile__title">Срок</h4>
+								<p class="services-mobile__text">30-120 мин</p>
 							</div>
-							<div class="services__btn">
+							<div class="services-mobile__btn">
 								<button class="btn-order" type="button">
 									<span class="btn-order__text">Заказать</span>
 									<span class="btn-order__icon"></span>
 								</button>
 							</div>
 						</li>
-						<li class="services__item">
-							<div class="services__group">
-								<h4 class="services__title">Ремонтные услуги</h4>
-								<p class="services__text">Диагностика</p>
+						<li class="services-mobile__item">
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Ремонтные услуги</h4>
+								<p class="services-mobile__text">Диагностика</p>
 							</div>
-							<div class="services__group">
-								<h4 class="services__title">Цена</h4>
-								<p class="services__text">Бесплатно</p>
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Цена</h4>
+								<p class="services-mobile__text">Бесплатно</p>
 							</div>
-							<div class="services__group services__group--last">
-								<h4 class="services__title">Срок</h4>
-								<p class="services__text">30 мин</p>
+							<div
+								class="services-mobile__group services-mobile__group--last"
+							>
+								<h4 class="services-mobile__title">Срок</h4>
+								<p class="services-mobile__text">30 мин</p>
 							</div>
-							<div class="services__btn">
+							<div class="services-mobile__btn">
 								<button class="btn-order" type="button">
 									<span class="btn-order__text">Заказать</span>
 									<span class="btn-order__icon"></span>
 								</button>
 							</div>
 						</li>
-						<li class="services__item">
-							<div class="services__group">
-								<h4 class="services__title">Ремонтные услуги</h4>
-								<p class="services__text">Замена дисплея</p>
+						<li class="services-mobile__item">
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Ремонтные услуги</h4>
+								<p class="services-mobile__text">Замена дисплея</p>
 							</div>
-							<div class="services__group">
-								<h4 class="services__title">Цена</h4>
-								<p class="services__text">1000 &#8381;</p>
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Цена</h4>
+								<p class="services-mobile__text">1000 &#8381;</p>
 							</div>
-							<div class="services__group services__group--last">
-								<h4 class="services__title">Срок</h4>
-								<p class="services__text">30-120 мин</p>
+							<div
+								class="services-mobile__group services-mobile__group--last"
+							>
+								<h4 class="services-mobile__title">Срок</h4>
+								<p class="services-mobile__text">30-120 мин</p>
 							</div>
-							<div class="services__btn">
+							<div class="services-mobile__btn">
 								<button class="btn-order" type="button">
 									<span class="btn-order__text">Заказать</span>
 									<span class="btn-order__icon"></span>
 								</button>
 							</div>
 						</li>
-						<li class="services__item">
-							<div class="services__group">
-								<h4 class="services__title">Ремонтные услуги</h4>
-								<p class="services__text">
+						<li class="services-mobile__item">
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Ремонтные услуги</h4>
+								<p class="services-mobile__text">
 									Замена полифонического динамика
 								</p>
 							</div>
-							<div class="services__group">
-								<h4 class="services__title">Цена</h4>
-								<p class="services__text">1000 &#8381;</p>
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Цена</h4>
+								<p class="services-mobile__text">1000 &#8381;</p>
 							</div>
-							<div class="services__group services__group--last">
-								<h4 class="services__title">Срок</h4>
-								<p class="services__text">30-120 мин</p>
+							<div
+								class="services-mobile__group services-mobile__group--last"
+							>
+								<h4 class="services-mobile__title">Срок</h4>
+								<p class="services-mobile__text">30-120 мин</p>
 							</div>
-							<div class="services__btn">
+							<div class="services-mobile__btn">
 								<button class="btn-order" type="button">
 									<span class="btn-order__text">Заказать</span>
 									<span class="btn-order__icon"></span>
 								</button>
 							</div>
 						</li>
-						<li class="services__item">
-							<div class="services__group">
-								<h4 class="services__title">Ремонтные услуги</h4>
-								<p class="services__text">
+						<li class="services-mobile__item">
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Ремонтные услуги</h4>
+								<p class="services-mobile__text">
 									Замена программного обеспечения
 								</p>
 							</div>
-							<div class="services__group">
-								<h4 class="services__title">Цена</h4>
-								<p class="services__text">1000 &#8381;</p>
+							<div class="services-mobile__group">
+								<h4 class="services-mobile__title">Цена</h4>
+								<p class="services-mobile__text">1000 &#8381;</p>
 							</div>
-							<div class="services__group services__group--last">
-								<h4 class="services__title">Срок</h4>
-								<p class="services__text">30-120 мин</p>
+							<div
+								class="services-mobile__group services-mobile__group--last"
+							>
+								<h4 class="services-mobile__title">Срок</h4>
+								<p class="services-mobile__text">30-120 мин</p>
 							</div>
-							<div class="services__btn">
+							<div class="services-mobile__btn">
 								<button class="btn-order" type="button">
 									<span class="btn-order__text">Заказать</span>
 									<span class="btn-order__icon"></span>
@@ -423,6 +474,83 @@
 							</div>
 						</li>
 					</ul>
+					<table class="services">
+						<thead>
+							<tr>
+								<th>Ремонтные услуги</th>
+								<th>Цена</th>
+								<th>Срок</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Диагностика</td>
+								<td>Бесплатно</td>
+								<td>30 мин</td>
+								<td>
+									<div class="services__btn">
+										<button class="btn-order" type="button">
+											<span class="btn-order__text">Заказать</span>
+											<span class="btn-order__icon"></span>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Замена дисплея</td>
+								<td>1000 &#8381;</td>
+								<td>30-120 мин</td>
+								<td>
+									<div class="services__btn">
+										<button class="btn-order" type="button">
+											<span class="btn-order__text">Заказать</span>
+											<span class="btn-order__icon"></span>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Замена полифонического динамика</td>
+								<td>1000 &#8381;</td>
+								<td>30-120 мин</td>
+								<td>
+									<div class="services__btn">
+										<button class="btn-order" type="button">
+											<span class="btn-order__text">Заказать</span>
+											<span class="btn-order__icon"></span>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Тестирование с выдачей технического заключения</td>
+								<td>1000 &#8381;</td>
+								<td>30-120 мин</td>
+								<td>
+									<div class="services__btn">
+										<button class="btn-order" type="button">
+											<span class="btn-order__text">Заказать</span>
+											<span class="btn-order__icon"></span>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Замена программного обеспечения</td>
+								<td>1000 &#8381;</td>
+								<td>30-120 мин</td>
+								<td>
+									<div class="services__btn">
+										<button class="btn-order" type="button">
+											<span class="btn-order__text">Заказать</span>
+											<span class="btn-order__icon"></span>
+										</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 					<p class="section__nds">
 						Все цены указаны с учетом НДС. Стоимость ремонта указана на
 						единичную услугу. Для получения коммерческого предложения на
@@ -438,14 +566,17 @@
 					</a>
 				</section>
 				<footer class="footer">
-					<p class="footer__text footer__text--date">&#169; 2019 CPS</p>
-					<p class="footer__text footer__text--dev">
-						Разработано командой Apesong
-					</p>
-					<p class="footer__text footer__text--conf">
+					<div class="footer__part">
+						<p class="footer__text footer__text--date">&#169; 2019 CPS</p>
+						<p class="footer__text footer__text--dev">
+							Разработано командой Apesong
+						</p>
+					</div>
+
+					<p class="footer__part footer__text footer__text--conf">
 						Политика конфиденциальности
 					</p>
-					<p class="footer__text footer__text--info">
+					<p class="footer__part footer__text footer__text--info">
 						Информация, размещенная на данной странице, не является публичной
 						офертой
 					</p>

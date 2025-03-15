@@ -25,3 +25,27 @@
 .footer__text--info {
 	margin-bottom: 0;
 }
+
+@media screen and (min-width: 768px) {
+	.footer {
+		padding-top: 32px;
+		padding-left: 24px;
+		padding-right: 24px;
+		padding-bottom: 25px;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.footer__part {
+		flex-basis: 33%;
+	}
+
+	.footer__part:first-child {
+		text-align: left;
+	}
+
+	.footer__part:last-child {
+		text-align: right;
+	}
+}

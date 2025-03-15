@@ -2,6 +2,10 @@
 	padding-left: 8px;
 }
 
+.expand--more {
+	display: none;
+}
+
 .expand__icon {
 	margin-right: 16px;
 	fill: var(--accent-pseudo-color);
@@ -30,4 +34,11 @@
 .expand__link:hover,
 .expand__link:focus {
 	color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+	.expand--more {
+		display: block;
+		padding-left: 24px;
+	}
 }
