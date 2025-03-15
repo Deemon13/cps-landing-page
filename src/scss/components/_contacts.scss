@@ -1,0 +1,36 @@
+.contacts {
+	margin-bottom: 40px;
+}
+
+.contacts__mail {
+	@extend %link;
+	margin-bottom: 12px;
+
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+
+	color: var(--main-dark-text-color);
+
+	transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.contacts__phone {
+	@extend %link;
+	font-family: 'TT Lakes Bold', sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.6px;
+
+	color: var(--main-dark-text-color);
+
+	transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__phone:hover,
+.contacts__phone:focus {
+	color: var(--accent-color);
+}

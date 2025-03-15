@@ -1,0 +1,29 @@
+.facilities-list {
+	@extend %list;
+}
+
+.facilities-list__item:not(:last-child) {
+	margin-bottom: 28px;
+}
+
+.facilities-list__link {
+	@extend %link;
+
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+
+	color: var(--main-dark-text-color);
+
+	transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.facilities-list__link--active {
+	color: var(--main-light-text-color);
+}
+
+.facilities-list__link:hover,
+.facilities-list__link:focus {
+	color: var(--accent-color);
+}

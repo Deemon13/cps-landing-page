@@ -95,6 +95,11 @@
 	.technics {
 		padding-left: 32px;
 		padding-right: 32px;
+		column-gap: 32px;
+	}
+
+	.technics__item {
+		width: 240px;
 	}
 
 	.technics__item--tablet {

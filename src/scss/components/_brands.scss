@@ -83,6 +83,11 @@
 	.brands {
 		padding-left: 32px;
 		padding-right: 32px;
+		column-gap: 32px;
+	}
+
+	.brands__item {
+		width: 240px;
 	}
 
 	.brands__item--tablet {
