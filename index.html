@@ -28,12 +28,12 @@
 				</div>
 				<div class="header__wrapper header__wrapper--right">
 					<div class="header__icons header__icons--tablet">
-						<div class="header__icon-wrapper">
+						<div class="header__icon-wrapper js-open-callback">
 							<svg width="40" height="40">
 								<use href="./src/images/icons/sprite.svg#phone"></use>
 							</svg>
 						</div>
-						<div class="header__icon-wrapper">
+						<div class="header__icon-wrapper js-open-feedback">
 							<svg width="40" height="40">
 								<use href="./src/images/icons/sprite.svg#chat"></use>
 							</svg>
@@ -707,6 +707,63 @@
 				</footer>
 			</div>
 		</main>
+		<!-- MODAL-FEEDBACK -->
+		<div class="modal-feedback js-feedback">
+			<form class="modal-feedback__form">
+				<div class="modal-feedback__btn close js-close-feedback">
+					<svg class="modal-feedback__icon close__icon" width="40" height="40">
+						<use href="./src/images/icons/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<h2>Обратная связь</h2>
+				<div><input type="text" placeholder="Имя" /></div>
+				<div><input type="text" placeholder="Телефон" /></div>
+				<div><input type="text" placeholder="Электронная почта" /></div>
+				<div><textarea name="" id="" placeholder="Сообщение"></textarea></div>
+				<div>
+					<p>
+						Нажимая “отправить”, вы даете согласие на
+						<span>обработку персональных данных</span> и соглашаетесь с нашей
+						<span>политикой конфиденциальности</span>
+					</p>
+				</div>
+				<div>
+					<div class="services__btn">
+						<button class="btn-order" type="submit">
+							<span class="btn-order__text">Отправить</span>
+							<span class="btn-order__icon"></span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- MODAL-CALL -->
+		<div class="modal-callback js-callback">
+			<form class="modal-callback__form">
+				<div class="modal-callback__btn close js-close-callback">
+					<svg class="modal-callback__icon close__icon" width="40" height="40">
+						<use href="./src/images/icons/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<h2>Заказать звонок</h2>
+				<div><input type="text" placeholder="Телефон" /></div>
+				<div>
+					<p>
+						Нажимая “отправить”, вы даете согласие на
+						<span>обработку персональных данных</span> и соглашаетесь с нашей
+						<span>политикой конфиденциальности</span>
+					</p>
+				</div>
+				<div>
+					<div class="services__btn">
+						<button class="btn-order" type="submit">
+							<span class="btn-order__text">Отправить</span>
+							<span class="btn-order__icon"></span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
 
 		<script
 			defer
@@ -715,5 +772,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./src/js/mobile-menu.js" type="module"></script>
+		<script src="./src/js/modal-feedback.js" type="module"></script>
+		<script src="./src/js/modal-callback.js" type="module"></script>
 	</body>
 </html>

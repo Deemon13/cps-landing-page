@@ -46,7 +46,7 @@
 	visibility: hidden;
 	pointer-events: none;
 
-	background-color: var(--secondary-light-bg-color);
+	background-color: var(--blur-light-bg-color);
 
 	transition: transform var(--animation-time) var(--animation-time-function),
 		opacity var(--animation-time) var(--animation-time-function),
