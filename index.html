@@ -5,8 +5,8 @@
 		<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CPS - landing-page</title>
-		<script type="module" crossorigin src="/cps-landing-page/assets/index-CZ3-hRG6.js"></script>
-		<link rel="stylesheet" crossorigin href="/cps-landing-page/assets/index-DWAWuwfD.css">
+		<script type="module" crossorigin src="/cps-landing-page/assets/index-DZqj2T1c.js"></script>
+		<link rel="stylesheet" crossorigin href="/cps-landing-page/assets/index-CCYR_tVd.css">
 	</head>
 	<body>
 		<header class="header">
@@ -29,12 +29,12 @@
 				</div>
 				<div class="header__wrapper header__wrapper--right">
 					<div class="header__icons header__icons--tablet">
-						<div class="header__icon-wrapper">
+						<div class="header__icon-wrapper js-open-callback">
 							<svg width="40" height="40">
 								<use href="/cps-landing-page/assets/sprite-Bm3oeS9B.svg#phone"></use>
 							</svg>
 						</div>
-						<div class="header__icon-wrapper">
+						<div class="header__icon-wrapper js-open-feedback">
 							<svg width="40" height="40">
 								<use href="/cps-landing-page/assets/sprite-Bm3oeS9B.svg#chat"></use>
 							</svg>
@@ -708,6 +708,63 @@
 				</footer>
 			</div>
 		</main>
+		<!-- MODAL-FEEDBACK -->
+		<div class="modal-feedback js-feedback">
+			<form class="modal-feedback__form">
+				<div class="modal-feedback__btn close js-close-feedback">
+					<svg class="modal-feedback__icon close__icon" width="40" height="40">
+						<use href="/cps-landing-page/assets/sprite-Bm3oeS9B.svg#close"></use>
+					</svg>
+				</div>
+				<h2>Обратная связь</h2>
+				<div><input type="text" placeholder="Имя" /></div>
+				<div><input type="text" placeholder="Телефон" /></div>
+				<div><input type="text" placeholder="Электронная почта" /></div>
+				<div><textarea name="" id="" placeholder="Сообщение"></textarea></div>
+				<div>
+					<p>
+						Нажимая “отправить”, вы даете согласие на
+						<span>обработку персональных данных</span> и соглашаетесь с нашей
+						<span>политикой конфиденциальности</span>
+					</p>
+				</div>
+				<div>
+					<div class="services__btn">
+						<button class="btn-order" type="submit">
+							<span class="btn-order__text">Отправить</span>
+							<span class="btn-order__icon"></span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- MODAL-CALL -->
+		<div class="modal-callback js-callback">
+			<form class="modal-callback__form">
+				<div class="modal-callback__btn close js-close-callback">
+					<svg class="modal-callback__icon close__icon" width="40" height="40">
+						<use href="/cps-landing-page/assets/sprite-Bm3oeS9B.svg#close"></use>
+					</svg>
+				</div>
+				<h2>Заказать звонок</h2>
+				<div><input type="text" placeholder="Телефон" /></div>
+				<div>
+					<p>
+						Нажимая “отправить”, вы даете согласие на
+						<span>обработку персональных данных</span> и соглашаетесь с нашей
+						<span>политикой конфиденциальности</span>
+					</p>
+				</div>
+				<div>
+					<div class="services__btn">
+						<button class="btn-order" type="submit">
+							<span class="btn-order__text">Отправить</span>
+							<span class="btn-order__icon"></span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
 
 		<script
 			defer
