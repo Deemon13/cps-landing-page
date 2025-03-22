@@ -5,8 +5,8 @@
 		<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CPS - landing-page</title>
-		<script type="module" crossorigin src="/cps-landing-page/assets/index-DZqj2T1c.js"></script>
-		<link rel="stylesheet" crossorigin href="/cps-landing-page/assets/index-CCYR_tVd.css">
+		<script type="module" crossorigin src="/cps-landing-page/assets/index-JNlaTDnh.js"></script>
+		<link rel="stylesheet" crossorigin href="/cps-landing-page/assets/index-Zffg1lRu.css">
 	</head>
 	<body>
 		<header class="header">
@@ -132,14 +132,14 @@
 				<div class="menu__footer">
 					<ul class="menu__actions">
 						<li class="actions__item">
-							<div class="menu__btn">
+							<div class="menu__btn js-open-callback-menu">
 								<svg class="menu__icon" width="40" height="40">
 									<use href="/cps-landing-page/assets/sprite-Bm3oeS9B.svg#phone"></use>
 								</svg>
 							</div>
 						</li>
 						<li class="actions__item">
-							<div class="menu__btn">
+							<div class="menu__btn js-open-feedback-menu">
 								<svg class="menu__icon" width="40" height="40">
 									<use href="/cps-landing-page/assets/sprite-Bm3oeS9B.svg#chat"></use>
 								</svg>
@@ -709,63 +709,129 @@
 			</div>
 		</main>
 		<!-- MODAL-FEEDBACK -->
-		<div class="modal-feedback js-feedback">
-			<form class="modal-feedback__form">
-				<div class="modal-feedback__btn close js-close-feedback">
-					<svg class="modal-feedback__icon close__icon" width="40" height="40">
+		<div class="modal-feedback__backdrop is-hidden js-feedback">
+			<div class="modal-feedback">
+				<div class="modal-feedback__btn js-close-feedback">
+					<svg class="modal-feedback__icon" width="40" height="40">
 						<use href="/cps-landing-page/assets/sprite-Bm3oeS9B.svg#close"></use>
 					</svg>
 				</div>
-				<h2>Обратная связь</h2>
-				<div><input type="text" placeholder="Имя" /></div>
-				<div><input type="text" placeholder="Телефон" /></div>
-				<div><input type="text" placeholder="Электронная почта" /></div>
-				<div><textarea name="" id="" placeholder="Сообщение"></textarea></div>
-				<div>
-					<p>
-						Нажимая “отправить”, вы даете согласие на
-						<span>обработку персональных данных</span> и соглашаетесь с нашей
-						<span>политикой конфиденциальности</span>
-					</p>
-				</div>
-				<div>
-					<div class="services__btn">
-						<button class="btn-order" type="submit">
-							<span class="btn-order__text">Отправить</span>
-							<span class="btn-order__icon"></span>
-						</button>
+				<h2 class="modal-feedback__title">Обратная связь</h2>
+				<form
+					action="javascript:void(0);"
+					autocomplete="off"
+					method="post"
+					name="modal-feedback-form"
+					class="modal-feedback__form"
+				>
+					<div class="modal-feedback__field">
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Имя"
+							class="modal-feedback__input"
+						/>
 					</div>
-				</div>
-			</form>
+					<div class="modal-feedback__field">
+						<input
+							type="tel"
+							name="phone"
+							id="phone"
+							placeholder="Телефон"
+							class="modal-feedback__input"
+						/>
+					</div>
+					<div class="modal-feedback__field">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Электронная почта"
+							class="modal-feedback__input"
+						/>
+					</div>
+					<div class="modal-feedback__field">
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="4"
+							placeholder="Сообщение"
+							class="modal-feedback__message"
+						></textarea>
+					</div>
+					<div class="modal-feedback__field modal-feedback__field--accept">
+						<p class="modal-feedback__accept">
+							Нажимая “отправить”, вы даете согласие на
+							<a href="#" class="modal-feedback__accent"
+								>обработку персональных данных</a
+							>
+							и соглашаетесь с нашей
+							<a href="#" class="modal-feedback__accent"
+								>политикой конфиденциальности</a
+							>
+						</p>
+					</div>
+					<div>
+						<div class="services__btn">
+							<button class="btn-order" type="submit">
+								<span class="btn-order__text">Отправить</span>
+								<span class="btn-order__icon"></span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-		<!-- MODAL-CALL -->
-		<div class="modal-callback js-callback">
-			<form class="modal-callback__form">
-				<div class="modal-callback__btn close js-close-callback">
-					<svg class="modal-callback__icon close__icon" width="40" height="40">
+		<!-- MODAL-CALLBACK -->
+		<div class="modal-callback__backdrop is-hidden js-callback">
+			<div class="modal-callback">
+				<div class="modal-callback__btn js-close-callback">
+					<svg class="modal-callback__icon" width="40" height="40">
 						<use href="/cps-landing-page/assets/sprite-Bm3oeS9B.svg#close"></use>
 					</svg>
 				</div>
-				<h2>Заказать звонок</h2>
-				<div><input type="text" placeholder="Телефон" /></div>
-				<div>
-					<p>
-						Нажимая “отправить”, вы даете согласие на
-						<span>обработку персональных данных</span> и соглашаетесь с нашей
-						<span>политикой конфиденциальности</span>
-					</p>
-				</div>
-				<div>
-					<div class="services__btn">
-						<button class="btn-order" type="submit">
-							<span class="btn-order__text">Отправить</span>
-							<span class="btn-order__icon"></span>
-						</button>
+				<h2 class="modal-callback__title">Заказать звонок</h2>
+				<form
+					action="javascript:void(0);"
+					autocomplete="off"
+					method="post"
+					name="modal-callback-form"
+					class="modal-callback__form"
+				>
+					<div class="modal-callback__field">
+						<input
+							type="tel"
+							name="phone"
+							id="phone"
+							placeholder="Телефон"
+							class="modal-callback__input"
+						/>
 					</div>
-				</div>
-			</form>
+					<div class="modal-callback__field modal-callback__field--accept">
+						<p class="modal-callback__accept">
+							Нажимая “отправить”, вы даете согласие на
+							<a href="#" class="modal-callback__accent"
+								>обработку персональных данных</a
+							>
+							и соглашаетесь с нашей
+							<a href="#" class="modal-callback__accent"
+								>политикой конфиденциальности</a
+							>
+						</p>
+					</div>
+					<div>
+						<div class="services__btn">
+							<button class="btn-order" type="submit">
+								<span class="btn-order__text">Отправить</span>
+								<span class="btn-order__icon"></span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
