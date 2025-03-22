@@ -2,6 +2,7 @@
 	--main-light-bg-color: #f8f8f8;
 	--secondary-light-bg-color: #ffffff;
 	--blur-light-bg-color: rgba(255, 255, 255, 0.96);
+	--blur-light-backdrop-color: rgba(255, 255, 255, 0.5);
 
 	--main-dark-text-color: #1b1c21;
 	--main-light-text-color: #7e7e82;
@@ -16,6 +17,8 @@
 	--item-border-line-color: #eaeaea;
 	--accent-color: #ff3e79;
 	--accent-pseudo-color: #41f6d7;
+
+	--shadow-right-modal: rgba(69, 79, 126, 0.2);
 
 	--animation-time: 250ms;
 	--animation-time-function: cubic-bezier(0.4, 0, 0.2, 1);

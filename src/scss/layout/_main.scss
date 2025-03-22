@@ -37,10 +37,19 @@
 	letter-spacing: -0.2px;
 
 	color: var(--main-dark-text-color);
+
+	transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.main__icon {
+	transition: transform var(--animation-time) var(--animation-time-function);
+}
+
+.main__icon-wraper:hover {
+	cursor: pointer;
 }
 
 .main__icon-wraper:hover .main__action-text {
-	cursor: pointer;
 	color: var(--accent-color);
 }
 

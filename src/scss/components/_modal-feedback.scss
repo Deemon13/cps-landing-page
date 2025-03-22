@@ -1,34 +1,192 @@
-.modal-feedback {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding-left: 22px;
-	padding-top: 30px;
-	padding-right: 30px;
-	padding-bottom: 30px;
+.modal-feedback__backdrop {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 320px;
-	height: 100vh;
 	z-index: 999;
 
-	transform: translateX(-100%);
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
+	width: 100vw;
+	height: 100vh;
 
-	background-color: var(--secondary-light-bg-color);
-	box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+	background-color: var(--blur-light-backdrop-color);
+	opacity: 1;
+	visibility: visible;
 
 	transition: transform var(--animation-time) var(--animation-time-function),
 		opacity var(--animation-time) var(--animation-time-function),
 		visibility var(--animation-time) var(--animation-time-function);
 }
 
-.modal-feedback.is-open {
-	transform: translateX(0);
-	opacity: 1;
-	visibility: visible;
-	pointer-events: initial;
+.modal-feedback__backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.backdrop.is-hidden .modal-feedback {
+	transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal-feedback {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+
+	min-height: 676px;
+	width: 320px;
+	padding-top: 104px;
+	padding-right: 16px;
+	padding-bottom: 75px;
+	padding-left: 16px;
+
+	background-color: var(--secondary-light-bg-color);
+
+	transition: transform var(--animation-time) var(--animation-time-function);
+}
+
+.modal-feedback__btn {
+	position: absolute;
+	top: 24px;
+	left: 16px;
+
+	transition: transform var(--animation-time) var(--animation-time-function);
+}
+
+.modal-feedback__btn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.modal-feedback__title {
+	margin-top: 0;
+	margin-bottom: 24px;
+
+	font-family: 'TT Lakes Bold', sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.6px;
+
+	color: var(--main-dark-text-color);
+}
+
+.modal-feedback__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-feedback__field {
+	margin-bottom: 16px;
+}
+
+.modal-feedback__field--accept {
+	margin-bottom: 19px;
+}
+
+.modal-feedback__input {
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border: 1px solid var(--item-border-line-color);
+	border-radius: 8px;
+
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+
+	color: var(--main-dark-text-color);
+
+	transition: border-color var(--animation-time) var(--animation-time-function);
+}
+
+.modal-feedback__input::placeholder {
+	color: var(--secondary-light-text-color);
+}
+
+.modal-feedback__input:focus {
+	outline: none;
+	border-color: var(--accent-color);
+}
+
+.modal-feedback__message {
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border: 1px solid var(--item-border-line-color);
+	border-radius: 8px;
+
+	resize: none;
+
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+
+	color: var(--main-dark-text-color);
+
+	transition: border-color var(--animation-time) var(--animation-time-function);
+}
+
+.modal-feedback__message::placeholder {
+	color: var(--secondary-light-text-color);
+}
+
+.modal-feedback__message:focus {
+	outline: none;
+	border-color: var(--accent-color);
+}
+
+.modal-feedback__accept {
+	margin-bottom: 0;
+	margin-top: 0;
+
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0px;
+
+	color: var(--main-light-text-color);
+}
+
+.modal-feedback__accent {
+	@extend %link;
+
+	color: var(--accent-color);
+}
+
+@media screen and (min-width: 1440px) {
+	.modal-feedback__backdrop {
+		transform: translateX(0);
+		background-color: var(--blur-light-bg-color);
+	}
+
+	.modal-feedback__backdrop.is-hidden {
+		transform: translateX(100%);
+	}
+
+	.modal-feedback {
+		top: 0;
+		left: auto;
+		right: 0;
+
+		transform: translate(0, 0);
+		width: 440px;
+		min-height: auto;
+		height: 100vh;
+		padding-top: 40px;
+		padding-right: 32px;
+		padding-bottom: auto;
+		padding-left: 32px;
+
+		box-shadow: -2px 0 4px 0 var(--shadow-right-modal);
+	}
+
+	.modal-feedback__btn {
+		top: 32px;
+		left: -70px;
+	}
 }
