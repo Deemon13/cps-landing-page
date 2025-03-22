@@ -15,6 +15,8 @@
 }
 
 .section__title--services {
+	display: flex;
+	align-items: center;
 	margin-bottom: 24px;
 
 	font-family: 'TT Lakes Bold', sans-serif;
@@ -23,6 +25,19 @@
 	letter-spacing: -0.6px;
 
 	color: var(--main-dark-text-color);
+}
+
+.section__title--services::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 4px;
+	height: 40px;
+	border-top-right-radius: 28px;
+	border-bottom-right-radius: 28px;
+
+	background-color: var(--accent-pseudo-color);
 }
 
 .section__title--repair {
@@ -125,6 +140,12 @@
 
 	.section__title--services {
 		margin-bottom: 8px;
+	}
+
+	.section__title--services::before {
+		width: 3px;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
 	}
 
 	.section__menu {

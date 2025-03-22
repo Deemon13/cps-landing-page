@@ -1,9 +1,28 @@
 .facilities-list {
+	position: relative;
 	@extend %list;
+}
+
+.facilities-list__item {
+	display: flex;
+	align-items: center;
 }
 
 .facilities-list__item:not(:last-child) {
 	margin-bottom: 28px;
+}
+
+.facilities-list__item--active::before {
+	content: '';
+	position: absolute;
+	left: -21px;
+	display: block;
+	width: 4px;
+	height: 32px;
+	border-top-right-radius: 28px;
+	border-bottom-right-radius: 28px;
+
+	background-color: var(--accent-pseudo-color);
 }
 
 .facilities-list__link {
@@ -26,4 +45,14 @@
 .facilities-list__link:hover,
 .facilities-list__link:focus {
 	color: var(--accent-color);
+}
+
+@media screen and (min-width: 1440px) {
+	.facilities-list__item--active::before {
+		left: -22px;
+
+		height: 29px;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
 }

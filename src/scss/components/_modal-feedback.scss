@@ -69,6 +69,19 @@
 	color: var(--main-dark-text-color);
 }
 
+.modal-feedback__title::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 4px;
+	height: 40px;
+	border-top-right-radius: 28px;
+	border-bottom-right-radius: 28px;
+
+	background-color: var(--accent-pseudo-color);
+}
+
 .modal-feedback__form {
 	display: flex;
 	flex-direction: column;
@@ -188,5 +201,11 @@
 	.modal-feedback__btn {
 		top: 32px;
 		left: -70px;
+	}
+
+	.modal-feedback__title::before {
+		width: 3px;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
 	}
 }
