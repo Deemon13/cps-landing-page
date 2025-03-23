@@ -1,0 +1,82 @@
+.swiper-prices {
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 5px;
+
+	max-width: 320px;
+	height: 270px;
+	overflow: hidden;
+}
+
+.swiper-prices__item:not(:last-child) {
+	margin-right: 16px;
+}
+
+.swiper-prices__item {
+	// @extend %link;
+	// display: flex;
+	// justify-content: space-between;
+	padding: 16px;
+	height: 200px;
+	width: 260px;
+	// box-sizing: border-box;
+
+	border-radius: 6px;
+	border: 1px solid var(--item-border-line-color);
+
+	background-color: var(--secondary-light-bg-color);
+
+	transition: border-color var(--animation-time) var(--animation-time-function);
+}
+
+.swiper-prices__link:hover .swiper-prices__icon,
+.swiper-prices__link:focus .swiper-prices__icon {
+	transform: scale(1.1);
+}
+
+.swiper-prices__link:hover {
+	border-color: var(--accent-color);
+}
+
+.swiper-prices__group {
+	margin-bottom: 16px;
+}
+
+.swiper-prices__group--last {
+	margin-bottom: 0;
+}
+
+.swiper-prices__title {
+	margin-top: 0;
+	margin-bottom: 4px;
+
+	font-family: 'TT Lakes Medium', sans-serif;
+	font-size: 14px;
+	line-height: 1.14; /*16px*/
+	letter-spacing: 0;
+
+	color: var(--main-light-text-color);
+}
+
+.swiper-prices__text {
+	margin: 0;
+
+	font-family: 'TT Lakes Regular', sans-serif;
+	font-size: 14px;
+	line-height: 1.29; /*18px*/
+	letter-spacing: 0.2px;
+
+	color: var(--main-dark-text-color);
+}
+
+.swiper-prices__btn {
+	position: absolute;
+	bottom: 56px;
+	right: 36px;
+}
+
+@media screen and (min-width: 768px) {
+	.swiper-prices {
+		display: none;
+	}
+}

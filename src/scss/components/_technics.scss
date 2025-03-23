@@ -1,8 +1,8 @@
 .technics {
 	@extend %list;
 	padding-left: 16px;
-	display: flex;
-	overflow: auto;
+	display: none;
+	// overflow: auto;
 }
 
 .technics__item {
@@ -67,6 +67,7 @@
 
 @media screen and (min-width: 768px) {
 	.technics {
+		display: flex;
 		margin-bottom: 24px;
 		padding-left: 24px;
 		padding-right: 24px;

@@ -33,6 +33,12 @@
 	pointer-events: initial;
 }
 
+.menu__background {
+	width: 40%;
+
+	background-color: var(--secondary-light-bg-color);
+}
+
 .blur-area {
 	position: fixed;
 	top: 0;
