@@ -26,3 +26,28 @@ window.matchMedia('(max-width: 768px)').addEventListener('change', e => {
 		// },
 	});
 });
+
+window.matchMedia('(max-width: 768px)').addEventListener('change', e => {
+	if (!e.matches) return;
+	const swiperBrands = new Swiper('.swiper-brands', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
+
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+		},
+
+		// Navigation arrows
+		// navigation: {
+		// 	nextEl: '.swiper-button-next',
+		// 	prevEl: '.swiper-button-prev',
+		// },
+
+		// And if we need scrollbar
+		// scrollbar: {
+		// 	el: '.swiper-scrollbar',
+		// },
+	});
+});

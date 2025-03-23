@@ -1,7 +1,7 @@
 .brands {
 	@extend %list;
 	padding-left: 16px;
-	display: flex;
+	display: none;
 	overflow: auto;
 }
 
@@ -55,6 +55,7 @@
 
 @media screen and (min-width: 768px) {
 	.brands {
+		display: flex;
 		margin-bottom: 24px;
 		padding-left: 24px;
 		padding-right: 24px;
