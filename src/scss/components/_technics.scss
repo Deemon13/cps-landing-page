@@ -2,7 +2,6 @@
 	@extend %list;
 	padding-left: 16px;
 	display: none;
-	// overflow: auto;
 }
 
 .technics__item {
@@ -89,6 +88,10 @@
 	.technics__item--tablet,
 	.technics__item--more {
 		display: none;
+	}
+
+	.technics__item--show {
+		display: block;
 	}
 }
 
