@@ -3,15 +3,19 @@
 	display: none;
 }
 
+.is-show {
+	display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
 	.text-about__tablet {
-		display: block;
+		display: inline-block;
 		margin-top: 26px;
 	}
 }
 
 @media screen and (min-width: 1440px) {
 	.text-about__desktop {
-		display: block;
+		display: inline-block;
 	}
 }
