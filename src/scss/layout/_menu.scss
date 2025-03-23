@@ -91,23 +91,23 @@
 
 	transition: fill var(--animation-time) var(--animation-time-function),
 		stroke var(--animation-time) var(--animation-time-function);
-}
 
-.menu__logo:hover {
-	cursor: pointer;
-	fill: var(--accent-color);
-	stroke: var(--accent-color);
+	&:hover {
+		cursor: pointer;
+		fill: var(--accent-color);
+		stroke: var(--accent-color);
+	}
 }
 
 .menu__btn {
 	display: flex;
 
 	transition: transform var(--animation-time) var(--animation-time-function);
-}
 
-.menu__btn:hover {
-	cursor: pointer;
-	transform: scale(1.1);
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.1);
+	}
 }
 
 .menu__actions {

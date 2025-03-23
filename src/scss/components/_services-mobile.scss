@@ -17,18 +17,18 @@
 	border: 1px solid var(--item-border-line-color);
 
 	background-color: var(--secondary-light-bg-color);
-}
 
-.services-mobile__item:not(:last-child) {
-	margin-right: 16px;
+	&:not(:last-child) {
+		margin-right: 16px;
+	}
 }
 
 .services-mobile__group {
 	margin-bottom: 16px;
-}
 
-.services-mobile__group--last {
-	margin-bottom: 0;
+	&--last {
+		margin-bottom: 0;
+	}
 }
 
 .services-mobile__title {

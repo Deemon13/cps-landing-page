@@ -17,10 +17,10 @@
 	background-color: var(--secondary-light-bg-color);
 
 	transition: border-color var(--animation-time) var(--animation-time-function);
-}
 
-.brands__item:not(:last-child) {
-	margin-right: 16px;
+	&:not(:last-child) {
+		margin-right: 16px;
+	}
 }
 
 .brands__link {
@@ -37,8 +37,10 @@
 	transform: scale(1.1);
 }
 
-.brands__item:hover {
-	border-color: var(--accent-color);
+.brands__item {
+	&:hover {
+		border-color: var(--accent-color);
+	}
 }
 
 .brands__logo {
@@ -66,21 +68,21 @@
 		justify-content: center;
 	}
 
-	.brands__item:not(:last-child) {
-		margin-right: 0;
-	}
-
 	.brands__item {
 		width: 224px;
-	}
 
-	.brands__item--tablet,
-	.brands__item--more {
-		display: none;
-	}
+		&:not(:last-child) {
+			margin-right: 0;
+		}
 
-	.brands__item--show {
-		display: block;
+		&--tablet,
+		&--more {
+			display: none;
+		}
+
+		&--show {
+			display: block;
+		}
 	}
 }
 
@@ -93,9 +95,9 @@
 
 	.brands__item {
 		width: 240px;
-	}
 
-	.brands__item--tablet {
-		display: block;
+		&--tablet {
+			display: block;
+		}
 	}
 }

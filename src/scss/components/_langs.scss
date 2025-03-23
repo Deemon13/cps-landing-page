@@ -5,23 +5,23 @@
 .langs__item {
 	font-family: 'TT Lakes Medium', sans-serif;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5; /*24px*/
 	letter-spacing: -0.2px;
 
 	color: var(--main-dark-text-color);
 
 	transition: color var(--animation-time) var(--animation-time-function);
-}
 
-.langs__item:not(:last-child) {
-	margin-right: 7px;
-}
+	&:not(:last-child) {
+		margin-right: 7px;
+	}
 
-.langs__item--active {
-	color: var(--main-light-text-color);
-}
+	&--active {
+		color: var(--main-light-text-color);
+	}
 
-.langs__item:hover {
-	cursor: pointer;
-	color: var(--accent-color);
+	&:hover {
+		cursor: pointer;
+		color: var(--accent-color);
+	}
 }

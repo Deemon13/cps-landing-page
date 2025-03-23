@@ -8,8 +8,10 @@
 	overflow: hidden;
 }
 
-.swiper-technics__item:not(:last-child) {
-	margin-right: 16px;
+.swiper-technics__item {
+	&:not(:last-child) {
+		margin-right: 16px;
+	}
 }
 
 .swiper-technics__link {
@@ -27,15 +29,15 @@
 	background-color: var(--secondary-light-bg-color);
 
 	transition: border-color var(--animation-time) var(--animation-time-function);
+
+	&:hover {
+		border-color: var(--accent-color);
+	}
 }
 
 .swiper-technics__link:hover .swiper-technics__icon,
 .swiper-technics__link:focus .swiper-technics__icon {
 	transform: scale(1.1);
-}
-
-.swiper-technics__link:hover {
-	border-color: var(--accent-color);
 }
 
 .swiper-technics__title {

@@ -17,15 +17,15 @@
 	background-color: var(--secondary-light-bg-color);
 
 	transition: border-color var(--animation-time) var(--animation-time-function);
-}
 
-.technics__item:not(:last-child) {
-	margin-right: 16px;
-}
+	&:not(:last-child) {
+		margin-right: 16px;
+	}
 
-.technics__item:hover {
-	cursor: pointer;
-	border-color: var(--accent-color);
+	&:hover {
+		cursor: pointer;
+		border-color: var(--accent-color);
+	}
 }
 
 .technics__link {
@@ -77,21 +77,23 @@
 		justify-content: center;
 	}
 
-	.technics__item:not(:last-child) {
-		margin-right: 0;
+	.technics__item {
+		&:not(:last-child) {
+			margin-right: 0;
+		}
 	}
 
 	.technics__item {
 		width: 224px;
-	}
 
-	.technics__item--tablet,
-	.technics__item--more {
-		display: none;
-	}
+		&--tablet,
+		&--more {
+			display: none;
+		}
 
-	.technics__item--show {
-		display: block;
+		&--show {
+			display: block;
+		}
 	}
 }
 
@@ -104,9 +106,9 @@
 
 	.technics__item {
 		width: 240px;
-	}
 
-	.technics__item--tablet {
-		display: block;
+		&--tablet {
+			display: block;
+		}
 	}
 }

@@ -21,7 +21,7 @@
 		font-family: 'TT Lakes Medium', sans-serif;
 		text-align: left;
 		font-size: 14px;
-		line-height: 16px;
+		line-height: 1.14; /*16px*/
 		letter-spacing: 0;
 
 		color: var(--main-light-text-color);
@@ -60,7 +60,7 @@
 
 		font-family: 'TT Lakes Regular', sans-serif;
 		font-size: 14px;
-		line-height: 18px;
+		line-height: 1.29; /*18px*/
 		letter-spacing: 0.2px;
 
 		color: var(--main-dark-text-color);

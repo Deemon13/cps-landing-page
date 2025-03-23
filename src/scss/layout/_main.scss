@@ -10,21 +10,23 @@
 	background-color: var(--main-light-bg-color);
 }
 
-.main__icons--desktop {
-	position: absolute;
-	top: 42px;
-	right: 30px;
-	display: none;
+.main__icons {
+	&--desktop {
+		position: absolute;
+		top: 42px;
+		right: 30px;
+		display: none;
+	}
 }
 
 .main__icon-wraper {
 	display: flex;
 	align-items: center;
 	z-index: 100;
-}
 
-.main__icon-wraper:first-child {
-	margin-right: 32px;
+	&:first-child {
+		margin-right: 32px;
+	}
 }
 
 .main__action-text {
@@ -33,7 +35,7 @@
 
 	font-family: 'TT Lakes Medium';
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5; /*24px*/
 	letter-spacing: -0.2px;
 
 	color: var(--main-dark-text-color);
@@ -76,8 +78,10 @@
 		padding-top: 42px;
 	}
 
-	.main__icons--desktop {
-		display: flex;
+	.main__icons {
+		&--desktop {
+			display: flex;
+		}
 	}
 
 	.main__icon-wraper {

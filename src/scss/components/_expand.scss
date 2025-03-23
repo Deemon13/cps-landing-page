@@ -1,9 +1,9 @@
 .expand {
 	padding-left: 8px;
-}
 
-.expand--more {
-	display: none;
+	&--more {
+		display: none;
+	}
 }
 
 .expand__icon {
@@ -12,10 +12,10 @@
 	transform: rotate(0);
 
 	transition: transform var(--animation-time) var(--animation-time-function);
-}
 
-.expand__icon--pressed {
-	transform: rotate(180deg);
+	&--pressed {
+		transform: rotate(180deg);
+	}
 }
 
 .expand__link {
@@ -29,11 +29,11 @@
 	color: var(--main-dark-text-color);
 
 	transition: color var(--animation-time) var(--animation-time-function);
-}
 
-.expand__link:hover,
-.expand__link:focus {
-	color: var(--accent-color);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
 
 @media screen and (min-width: 768px) {

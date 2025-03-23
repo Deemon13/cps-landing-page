@@ -24,6 +24,10 @@
 	background-color: var(--secondary-light-bg-color);
 
 	transition: border-color var(--animation-time) var(--animation-time-function);
+
+	&:hover {
+		border-color: var(--accent-color);
+	}
 }
 
 .swiper-brands__link:hover .swiper-brands__icon,
@@ -31,30 +35,20 @@
 	transform: scale(1.1);
 }
 
-.swiper-brands__link:hover {
-	border-color: var(--accent-color);
-}
-
 .swiper-brands__logo {
 	align-self: center;
 	max-height: 40px;
-}
-
-.swiper-brands__icon {
-	width: 40px;
-	height: 40px;
-
-	transition: transform var(--animation-time) var(--animation-time-function);
-}
-
-.swiper-brands__logo {
 	display: block;
 	height: auto;
 	flex-shrink: 0;
 }
 
 .swiper-brands__icon {
+	width: 40px;
+	height: 40px;
 	flex-shrink: 0;
+
+	transition: transform var(--animation-time) var(--animation-time-function);
 }
 
 @media screen and (min-width: 768px) {

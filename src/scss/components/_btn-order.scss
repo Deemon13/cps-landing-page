@@ -13,15 +13,15 @@
 	transition: color var(--animation-time) var(--animation-time-function),
 		background-color var(--animation-time) var(--animation-time-function),
 		border-color var(--animation-time) var(--animation-time-function);
-}
 
-.btn-order:hover {
-	cursor: pointer;
+	&:hover {
+		cursor: pointer;
 
-	border-color: 1px solid var(--accent-color);
+		border-color: 1px solid var(--accent-color);
 
-	color: var(--accent-color);
-	background-color: var(--secondary-light-bg-color);
+		color: var(--accent-color);
+		background-color: var(--secondary-light-bg-color);
+	}
 }
 
 .btn-order__text {

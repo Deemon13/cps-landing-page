@@ -6,11 +6,11 @@
 	color: var(--main-dark-text-color);
 
 	transition: color var(--animation-time) var(--animation-time-function);
-}
 
-.commerce:hover,
-.commerce:focus {
-	color: var(--accent-color);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
 
 .commerce__text {

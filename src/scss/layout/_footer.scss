@@ -15,15 +15,15 @@
 
 	font-family: 'TT Lakes Medium', sans-serif;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.14; /*16px*/
 	letter-spacing: 0;
 
 	color: var(--main-light-text-color);
-}
 
-.footer__text--date,
-.footer__text--info {
-	margin-bottom: 0;
+	&--date,
+	&--info {
+		margin-bottom: 0;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -39,14 +39,14 @@
 
 	.footer__part {
 		flex-basis: 33%;
-	}
 
-	.footer__part:first-child {
-		text-align: left;
-	}
+		&:first-child {
+			text-align: left;
+		}
 
-	.footer__part:last-child {
-		text-align: right;
+		&:last-child {
+			text-align: right;
+		}
 	}
 }
 
