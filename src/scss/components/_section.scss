@@ -58,13 +58,6 @@
 	);
 }
 
-.section__menu {
-	@extend %list;
-	margin-bottom: 24px;
-	display: flex;
-	overflow: auto;
-}
-
 .section__descr {
 	margin-top: 0;
 	margin-bottom: 16px;
@@ -94,10 +87,6 @@
 	}
 
 	.section__title--services {
-		margin-bottom: 32px;
-	}
-
-	.section__menu {
 		margin-bottom: 32px;
 	}
 
@@ -146,12 +135,6 @@
 		width: 3px;
 		border-top-right-radius: 2px;
 		border-bottom-right-radius: 2px;
-	}
-
-	.section__menu {
-		overflow: visible;
-		flex-wrap: wrap;
-		margin-bottom: 8px;
 	}
 
 	.section__descr {

@@ -1,3 +1,8 @@
+.services-list {
+	@extend %list;
+	display: none;
+}
+
 .services-list__item {
 	padding: 8px;
 
@@ -33,5 +38,18 @@
 	color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+	.services-list {
+		display: flex;
+		flex-wrap: nowrap;
+		margin-bottom: 32px;
+		overflow: auto;
+	}
+}
+
 @media screen and (min-width: 1440px) {
+	.services-list {
+		flex-wrap: wrap;
+		margin-bottom: 8px;
+	}
 }
