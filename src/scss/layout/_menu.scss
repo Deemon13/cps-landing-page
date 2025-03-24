@@ -33,12 +33,6 @@
 	pointer-events: initial;
 }
 
-.menu__background {
-	width: 40%;
-
-	background-color: var(--secondary-light-bg-color);
-}
-
 .blur-area {
 	position: fixed;
 	top: 0;
@@ -128,7 +122,7 @@
 @media screen and (min-width: 1440px) {
 	.menu {
 		width: 100%;
-		max-width: 276px;
+		width: 306px;
 		position: relative;
 		transform: translateX(0);
 		opacity: 1;
@@ -140,5 +134,11 @@
 
 	.close {
 		display: none;
+	}
+
+	.menu__background {
+		width: 320px;
+
+		background-color: var(--secondary-light-bg-color);
 	}
 }
