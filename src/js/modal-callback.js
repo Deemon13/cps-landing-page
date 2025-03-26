@@ -1,34 +1,47 @@
-(() => {
-	// document.removeEventListener('keydown', onEscKeyPress);
-	const modalCallback = document.querySelector('.js-callback');
-	const openCallbackBtn = document.querySelector('.js-open-callback');
-	const openCallbackBtnMenu = document.querySelector('.js-open-callback-menu');
-	const closeCallbackBtn = document.querySelector('.js-close-callback');
+const refs = {
+	openCallbackBtn: document.querySelector('[callback-modal-open]'),
+	openCallbackTabletBtn: document.querySelector('[callback-tablet-modal-open]'),
+	closeCallbackBtn: document.querySelector('[callback-modal-close]'),
+	modalCallback: document.querySelector('[callback-modal]'),
+};
 
-	const toggleCallback = () => {
-		// document.removeEventListener('keydown', onEscKeyPress);
-		const isMenuOpen =
-			openCallbackBtn.getAttribute('aria-expanded') === 'true' || false;
-		openCallbackBtn.setAttribute('aria-expanded', !isMenuOpen);
-		modalCallback.classList.toggle('is-hidden');
-		// document.addEventListener('keydown', onEscKeyPress);
+refs.openCallbackBtn.addEventListener('click', openCallbackModal);
+refs.openCallbackTabletBtn.addEventListener('click', openCallbackModal);
 
-		const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
-		bodyScrollLock[scrollLockMethod](document.body);
-	};
+function openCallbackModal(event) {
+	event.preventDefault();
+	toggleModal();
+	document.addEventListener('keydown', onEscKeyPress);
+	refs.closeCallbackBtn.addEventListener('click', onCallbackModalClose);
+	refs.modalCallback.addEventListener('click', onBackdropClick);
+}
 
-	// function onEscKeyPress(event) {
-	// 	const ESC_KEY_CODE = 'Escape';
-	// 	const isEscKey = event.code === ESC_KEY_CODE;
+function toggleModal() {
+	refs.modalCallback.classList.toggle('is-hidden');
+}
 
-	// 	if (isEscKey) {
-	// 		toggleCallback();
-	// 	}
+function onCallbackModalClose() {
+	toggleModal();
+	refs.closeCallbackBtn.removeEventListener('click', onCallbackModalClose);
+	document.removeEventListener('keydown', onEscKeyPress);
+}
 
-	// 	document.removeEventListener('keydown', onEscKeyPress);
-	// }
+function onBackdropClick(event) {
+	if (event.currentTarget === event.target) {
+		toggleModal();
+		document.removeEventListener('keydown', onEscKeyPress);
+		refs.modalCallback.removeEventListener('click', onBackdropClick);
+	}
+}
 
-	openCallbackBtn.addEventListener('click', toggleCallback);
-	openCallbackBtnMenu.addEventListener('click', toggleCallback);
-	closeCallbackBtn.addEventListener('click', toggleCallback);
-})();
+function onEscKeyPress(event) {
+	const ESC_KEY_CODE = 'Escape';
+	const isEscKey = event.code === ESC_KEY_CODE;
+
+	if (isEscKey) {
+		document.removeEventListener('keydown', onEscKeyPress);
+		toggleModal();
+		refs.closeCallbackBtn.removeEventListener('click', onCallbackModalClose);
+		refs.modalCallback.removeEventListener('click', onBackdropClick);
+	}
+}

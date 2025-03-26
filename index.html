@@ -27,12 +27,12 @@
 				</div>
 				<div class="header__wrapper header__wrapper--right">
 					<div class="header__icons header__icons--tablet">
-						<div class="header__icon-wrapper js-open-callback">
+						<div class="header__icon-wrapper" callback-tablet-modal-open>
 							<svg width="40" height="40">
 								<use href="./src/images/icons/sprite.svg#phone"></use>
 							</svg>
 						</div>
-						<div class="header__icon-wrapper js-open-feedback">
+						<div class="header__icon-wrapper" feedback-tablet-modal-open>
 							<svg width="40" height="40">
 								<use href="./src/images/icons/sprite.svg#chat"></use>
 							</svg>
@@ -143,7 +143,7 @@
 					<div class="menu__footer">
 						<ul class="menu__actions">
 							<li class="actions__item">
-								<div class="menu__btn js-open-callback-menu">
+								<div class="menu__btn" callback-modal-open>
 									<svg class="menu__icon" width="40" height="40">
 										<use
 											href="./src/images/icons/sprite.svg#phone"
@@ -152,7 +152,7 @@
 								</div>
 							</li>
 							<li class="actions__item">
-								<div class="menu__btn js-open-feedback-menu">
+								<div class="menu__btn" feedback-modal-open>
 									<svg class="menu__icon" width="40" height="40">
 										<use
 											href="./src/images/icons/sprite.svg#chat"
@@ -1000,9 +1000,9 @@
 			</div>
 		</main>
 		<!-- MODAL-FEEDBACK -->
-		<div class="modal-feedback__backdrop is-hidden js-feedback js-close-blurarea">
+		<div class="modal-feedback__backdrop is-hidden" feedback-modal>
 			<div class="modal-feedback">
-				<div class="modal-feedback__btn js-close-feedback">
+				<div class="modal-feedback__btn" feedback-modal-close>
 					<svg class="modal-feedback__icon" width="40" height="40">
 						<use href="./src/images/icons/sprite.svg#close"></use>
 					</svg>
@@ -1076,9 +1076,9 @@
 			</div>
 		</div>
 		<!-- MODAL-CALLBACK -->
-		<div class="modal-callback__backdrop is-hidden js-callback">
+		<div class="modal-callback__backdrop is-hidden" callback-modal>
 			<div class="modal-callback">
-				<div class="modal-callback__btn js-close-callback">
+				<div class="modal-callback__btn" callback-modal-close>
 					<svg class="modal-callback__icon" width="40" height="40">
 						<use href="./src/images/icons/sprite.svg#close"></use>
 					</svg>
